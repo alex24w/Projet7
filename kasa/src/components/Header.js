@@ -6,7 +6,7 @@ import LettreA from '../assets/LettreA.png'
 
 
 
-function Banner() {
+function Header() {
     return (
         <div className="Header">
             <div className='Logo'>
@@ -24,4 +24,4 @@ function Banner() {
     )
 }
 
-export default Banner
+export default Header

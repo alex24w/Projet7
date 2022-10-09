@@ -1,0 +1,40 @@
+.Body{
+    border: 1px red solid;
+    width: 1240px;
+    margin: auto;
+    height: auto;
+    margin-top: 43px;
+
+
+}
+
+.Section{
+    
+    height: 223px;
+    border-radius: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.Section p { 
+    
+    width: 705px;
+    height: 70px;
+    margin: auto;
+    margin-top: 76px;
+    display: flex;
+    justify-content: center;
+   /* font-family: 'Montserrat';*/
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    color: #fff;
+    
+    
+}
+
+.Section img {
+    position: relative;
+    border-radius: 25px;
+    
+}

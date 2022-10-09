@@ -1,7 +1,15 @@
-import Banner from './Banner';
+import Header from './Header';
+import Body from './Body';
 
 function App() {
-  return <Banner/>;
+  return (
+    <div>
+      <Header/>;
+      <Body/>
+    </div>  
+  )  
 }
 
 export default App;
+
+
