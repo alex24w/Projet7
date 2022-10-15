@@ -1,16 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './components/App';
-import './styles/index.css';
-import './styles/Header.css';
-import './styles/Body.css'
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+ReactDOM.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <div className="contenu">        
+        <App />      
+    </div>
+  </React.StrictMode>,
+  document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function

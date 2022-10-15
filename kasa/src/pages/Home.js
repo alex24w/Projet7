@@ -1,20 +1,20 @@
 import React from "react";
-import "./Accueil.css";
-import Banniere from "../../components/Banniere/Banniere";
-import banniereAccueil from "../../assets/img/Pages/Accueil/Banniere.png";
+import "./Home.css";
+import Banniere from "../components/Banniere/Banniere";
+import banniereAccueil from "../assets/img/Pages/Home/Banniere.png";
 import { NavLink } from "react-router-dom";
-import Tuile from "../../components/Tuile/Tuile";
-import ListeLogements from "../../assets/api/logements.json";
+import Logements from "../components/Logements/Logements";
+import ListeLogements from "../assets/api/logements.json";
 
-function Accueil() {
+function Home() {
     return(
-        <div className="Accueil">
+        <div className="Home">
             <Banniere image={banniereAccueil} texte="Chez vous, partout et ailleurs"/>
             <div className="liste-logements">
-                {ListeLogements.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id+"/#"}><Tuile key={logement.id} id={logement.id} image={logement.cover} titre={logement.title} /></NavLink>)}
+                {ListeLogements.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id+"/#"}><Logements key={logement.id} id={logement.id} image={logement.cover} titre={logement.title} /></NavLink>)}
             </div>
         </div>
     );
 }
 
-export default Accueil;
+export default Home;

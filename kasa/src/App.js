@@ -1,15 +1,13 @@
-import Header from './Header';
-import Body from './Body';
+import React from "react";
+import './App.css';
+import RoutesPath from "../src/routes/RoutesPath";
 
 function App() {
-  return (
-    <div>
-      <Header/>;
-      <Body/>
-    </div>  
-  )  
+    return (
+        <div className="App">
+            <RoutesPath/>
+        </div>
+    );
 }
 
 export default App;
-
-
