@@ -1,12 +1,12 @@
 import React from "react";
 import "./Logement.css";
 import { useParams, Navigate } from 'react-router-dom';
-import ListeLogements from "../../assets/api/logements.json";
-import Carrousel from "../../components/Carrousel/Carrousel";
-import Tag from "../../components/Tag/Tag";
-import Etoile from "../../assets/img/Pages/Fiche-logement/Etoile.png";
-import EtoileVide from "../../assets/img/Pages/Fiche-logement/EtoileVide.png";
-import Dropdown from "../../components/Dropdown/Dropdown";
+import ListeLogements from "../assets/api/logements.json";
+import Carrousel from "../components/Carrousel/Carrousel";
+import Tag from "../components/Tag/Tag";
+import Etoile from "../assets/img/Pages/Fiche-logement/Etoile.png";
+import EtoileVide from "../assets/img/Pages/Fiche-logement/EtoileVide.png";
+import Dropdown from "../components/Dropdown/Dropdown";
 
 function Fiche() {
     /* Récupère la bonne fiche */
