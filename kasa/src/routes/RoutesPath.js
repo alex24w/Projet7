@@ -9,12 +9,12 @@ import APropos from "../pages/APropos";
 
 function RoutesPath() {
     return(
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <BrowserRouter>
             <Layout>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
                     <Route path="/logement/:id" element={<Logement/>}/>
-                    <Route path="/a-propos" element={<APropos />}/>
+                    <Route path="/a-propos" element={<APropos/>}/>
                 </Routes>
             </Layout>
         </BrowserRouter>

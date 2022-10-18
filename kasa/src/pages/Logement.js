@@ -8,7 +8,7 @@ import Etoile from "../assets/img/Pages/Fiche-logement/Etoile.png";
 import EtoileVide from "../assets/img/Pages/Fiche-logement/EtoileVide.png";
 import Dropdown from "../components/Dropdown/Dropdown";
 
-function Fiche() {
+function FicheAppart() {
     /* Récupère la bonne fiche */
     const id = useParams();
     const ficheLogement = ListeLogements.find(logement => logement.id === id.id);
@@ -66,10 +66,10 @@ function Fiche() {
                             <Dropdown titre="Équipements" description={equipementsLogement}/>
                         </div>
                     </div>
-                ) : <Navigate replace to="/404"/>
+                ) : <Navigate/>
             }
         </>
     )
 }
 
-export default Fiche;
+export default FicheAppart;
