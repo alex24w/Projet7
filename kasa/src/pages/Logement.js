@@ -66,10 +66,11 @@ function FicheAppart() {
                             <Dropdown titre="Équipements" description={equipementsLogement}/>
                         </div>
                     </div>
-                ) : <Navigate/>
+                ) : <Navigate replace to ="/404"/>
             }
         </>
     )
 }
 
 export default FicheAppart;
+
