@@ -7,6 +7,7 @@ import Tag from "../components/Tag/Tag";
 import Etoile from "../assets/img/Pages/Fiche-logement/Etoile.png";
 import EtoileVide from "../assets/img/Pages/Fiche-logement/EtoileVide.png";
 import Dropdown from "../components/Dropdown/Dropdown";
+import Page404 from "../pages/404"
 
 function FicheAppart() {
     /* Récupère la bonne fiche */
@@ -66,7 +67,7 @@ function FicheAppart() {
                             <Dropdown titre="Équipements" description={equipementsLogement}/>
                         </div>
                     </div>
-                ) : <Navigate replace to ="/404"/>
+                ) : <Page404/>
             }
         </>
     )
